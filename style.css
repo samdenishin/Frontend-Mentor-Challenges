@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Not really sure what this does now, but it is now stuck on the top left kind of */
+}
+
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    /* I think that this makes sure that the div automatically stretches full height */
+    justify-content: center;
+    /* make it center and horizontal */
+    align-items: center;
+    /* Official definition: The flexbox items are aligned at the center of the cross axis.
+    Without this the white part extends infinitely to the bottom and with this it is nice and compact */
+    min-height: 100vh;
+    /*  Official definition: 100vh means that the initial body height will take 100% of the viewport height. 
+    Also it kind of places it in the center of the screen */
+    font-family: "Outfit", sans-serif;
+}
+
+.card {
+    width: 320px;
+    /* you allow the width of things. 
+    So in this case you can determine how long a sentence can be before it continues in a new line below it */
+    padding: 16px;
+    /* padding is the first box around content */
+    background-color: white;
+    border-radius: 19px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+.card > img {
+    max-width: 100%;
+    /* This ensures that the picture stays within the card.
+    Without this the picture popped out of the right side of the card */
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.4rem;
+    color: hsl(218, 44%, 22%)
+}
+
+.card > p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: hsl(220, 15%, 55%);
+
+}
